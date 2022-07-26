@@ -577,6 +577,10 @@ video {
   grid-row: span 4 / span 4;
 }
 
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -621,6 +625,10 @@ video {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .place-content-stretch {
   place-content: stretch;
 }
@@ -647,6 +655,14 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0px * var(--tw-space-x-reverse));
   margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.place-self-end {
+  place-self: end;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-x-clip {
@@ -695,8 +711,53 @@ video {
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
+.p-5 {
+  padding: 1.25rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .duration-1000 {
   transition-duration: 1000ms;
+}
+
+.duration-75 {
+  transition-duration: 75ms;
+}
+
+.hover\:bg-orange-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 186 116 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-blue-300:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:px-28 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -707,9 +768,9 @@ video {
 }
 
 @media (min-width: 1024px) {
-  .lg\:px-44 {
-    padding-left: 11rem;
-    padding-right: 11rem;
+  .lg\:mx-52 {
+    margin-left: 13rem;
+    margin-right: 13rem;
   }
 }
 
@@ -721,24 +782,9 @@ video {
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:px-\[100rem\] {
-    padding-left: 100rem;
-    padding-right: 100rem;
-  }
-
-  .\32xl\:px-\[\] {
-    padding-left: ;
-    padding-right: ;
-  }
-
-  .\32xl\:px-\[99rem\] {
-    padding-left: 99rem;
-    padding-right: 99rem;
-  }
-
-  .\32xl\:px-\[30rem\] {
-    padding-left: 30rem;
-    padding-right: 30rem;
+  .\32xl\:mx-\[30rem\] {
+    margin-left: 30rem;
+    margin-right: 30rem;
   }
 }
 
@@ -821,8 +867,20 @@ video {
     padding-right: 2.5rem;
   }
 
+  .xxsm\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .xxsm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+}
+
+@media (min-width: 1700px) {
+  .\33xl\:px-\[40rem\] {
+    padding-left: 40rem;
+    padding-right: 40rem;
   }
 }

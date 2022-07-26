@@ -31,8 +31,24 @@ function operate(num1, num2, callback) {
 // will clear the display on click
 const clearButton = document.getElementById('clear-button')
 
+// main display in screen
+let displayValue = document.getElementById('display-value')
 
-// getting numbers buttons as nodelists, every button will have the same 
+
+/** 
+ * getting numbers buttons as nodelists
+ * every number will have the same eventlistener
+ * get button's value and then update displayValue
+*/
+const numberButtons = document.querySelectorAll('#number-button')
+numberButtons.forEach((numberButton) => {
+
+    numberButton.addEventListener('click', () => {
+        displayValue.textContent += numberButton.textContent
+    })
+    
+    
+})
 
 
 console.log(operate(1, 2, add));

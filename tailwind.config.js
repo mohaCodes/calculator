@@ -7,7 +7,10 @@ module.exports = {
 
       // adding smaller screens
       screens: {
-        'xs': '275px'
+        'xs': '275px',
+        'xsm': '340px',
+        'xxsm': '500px',
+        
       },
 
 
@@ -17,6 +20,11 @@ module.exports = {
         '7': 'repeat(7, minmax(0, 1fr))',
 
       },
+
+
+      
+
+      
 
     },
   },

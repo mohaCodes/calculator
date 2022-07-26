@@ -1,0 +1,23 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohaCodes/calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohaCodes/calculator/issues"
+  },
+  "homepage": "https://github.com/mohaCodes/calculator#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.6"
+  }
+}

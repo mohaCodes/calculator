@@ -17,6 +17,8 @@
     
     
     <div class="flex duration-1000 border w-full h-full flex-auto
+            xxsm:px-16
+            sm:px-28
             md:px-32
             lg:px-44
             xl:px-64
@@ -33,8 +35,12 @@
 
 
             <!-- Calculator's screen -->
-            <section class="border border-black rounded-lg bg-slate-50
+            <section class="border flex flex-col p-4 border-black rounded-lg bg-slate-50
                 xs:col-span-4 xs:row-start-1 xs:row-span-2">
+
+                <p class="place-self-end text-2xl">+9</p>
+                <h1 class="text-4xl self-end place-self-end mb-5">278817</h1>
+
             </section>
 
             
@@ -42,12 +48,12 @@
             <!-- Contains Delete & Clear buttons -->
             <section class="col-span-4 row-span-1 flex space-x-2">
                 
-                <button type="button" class="bg-orange-400 rounded-lg w-1/2 border border-black
+                <button type="button" class="bg-orange-400 hover:bg-orange-300 duration-75 rounded-lg w-1/2 border border-black
                     xs:px-3 xs:py-2 xs:flex-1 xs:font-bold">
                     CLEAR
                 </button>
 
-                <button type="button" class="bg-blue-400 rounded-lg w-1/2 border border-black
+                <button type="button" class="bg-blue-400 hover:bg-blue-300 duration-75 rounded-lg w-1/2 border border-black
                     xs:px-3 xs:py-2 xs:font-bold">
                     DELETE
                 </button>
@@ -59,19 +65,19 @@
                 <!-- Conatins first row of buttons -->
                 <div class="space-x-0.5 col-span-4 grid place-content-stretch grid-cols-4">
 
-                    <button type="button" class="bg-slate-50 rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold xs:py-3">
                         7
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         8
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         9
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         /
                     </button>
@@ -82,19 +88,19 @@
                 <!-- Conatins second row of buttons -->
                 <div class="space-x-0.5 col-span-4 grid place-content-stretch grid-cols-4">
 
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         4
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         5
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         6
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         *
                     </button>
@@ -105,19 +111,19 @@
                 <!-- Conatins thrid row of buttons -->
                 <div class="space-x-0.5 col-span-4 grid place-content-stretch grid-cols-4">
 
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         1
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         2
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         3
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         -
                     </button>
@@ -128,19 +134,19 @@
                 <!-- Conatins fourth row of buttons -->
                 <div class="space-x-0.5 col-span-4 grid place-content-stretch grid-cols-4">
 
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         .
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         0
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         =
                     </button>
-                    <button type="button" class="bg-slate-50  rounded-lg border border-black
+                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         +
                     </button>

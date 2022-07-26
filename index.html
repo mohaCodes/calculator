@@ -8,7 +8,70 @@
     <link rel="stylesheet" href="dist/output.css">
     <title>Document</title>
 </head>
-<body>
-    <h1 class="text-xs">Hello World</h1>
+<body class="w-screen h-screen border-2 border-black max-h-screen max-w-screen overflow-x-clip bg-gray-50 
+    xs:p-3.5">
+    
+    
+    <!-- contains all of the calculator content & buttons -->
+    <div class="border-2 border-red-400 rounded-lg grid bg-gray-400 grid-cols-4 grid-rows-7
+        xs:w-full xs:p-3 xs:space-y-3">
+
+
+        <!-- Calculator's screen -->
+        <section class="border border-black rounded-lg bg-slate-50
+            xs:col-span-4 xs:row-start-1 xs:row-span-2">
+        </section>
+
+        
+
+        <!-- Contains Delete & Clear buttons -->
+        <section class="col-span-4 row-span-1 flex space-x-2">
+            
+            <button type="button" class="bg-orange-400 rounded-lg w-1/2 border border-black
+                xs:px-3 xs:py-2 xs:flex-1 xs:font-bold">
+                CLEAR
+            </button>
+
+            <button type="button" class="bg-blue-400 rounded-lg w-1/2 border border-black
+                xs:px-3 xs:py-2 xs:font-bold">
+                DELETE
+            </button>
+
+        </section>
+
+
+        <!-- Conatins first row of buttons -->
+        <div class="border border-black space-x-1 col-span-4 grid place-content-stretch grid-cols-4">
+
+            <button type="button" class="bg-slate-50  rounded-lg border border-black
+                xs:font-bold xs:py-3">
+                7
+            </button>
+            <button type="button" class="bg-slate-50  rounded-lg border border-black
+                xs:font-bold xs:py-3">
+                8
+            </button>
+            <button type="button" class="bg-slate-50  rounded-lg border border-black
+                xs:font-bold xs:py-3">
+                9
+            </button>
+            <button type="button" class="bg-slate-50  rounded-lg border border-black
+                xs:font-bold xs:py-3">
+                /
+            </button>
+
+        </div>
+
+
+        
+
+
+
+    </div>
+
+    
+
+
+
 </body>
 </html>

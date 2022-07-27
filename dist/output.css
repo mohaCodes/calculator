@@ -565,6 +565,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.z-40 {
+  z-index: 40;
+}
+
 .col-span-4 {
   grid-column: span 4 / span 4;
 }
@@ -575,10 +579,6 @@ video {
 
 .row-span-4 {
   grid-row: span 4 / span 4;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
 }
 
 .flex {
@@ -597,6 +597,12 @@ video {
   height: 100%;
 }
 
+.h-fit {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
 .max-h-screen {
   max-height: 100vh;
 }
@@ -611,6 +617,10 @@ video {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.flex-1 {
+  flex: 1 1 0%;
 }
 
 .grid-cols-4 {
@@ -663,6 +673,10 @@ video {
 
 .self-end {
   align-self: flex-end;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-clip {

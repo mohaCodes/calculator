@@ -27,12 +27,19 @@ function operate(num1, num2, callback) {
     return `${callback(num1, num2)}`
 }
 
-
-// will clear the display on click
-const clearButton = document.getElementById('clear-button')
-
 // main display in screen
 let displayValue = document.getElementById('display-value')
+
+
+/**
+ * will clear the display on click
+ *  */ 
+const clearButton = document.getElementById('clear-button')
+clearButton.addEventListener('click', () => {
+    displayValue.textContent = ''
+    displayValue.classList.add('text-4xl')
+})
+
 
 
 /** 
@@ -45,6 +52,12 @@ numberButtons.forEach((numberButton) => {
 
     numberButton.addEventListener('click', () => {
         displayValue.textContent += numberButton.textContent
+
+        if(displayValue.innerText.length == 15) {
+            displayValue.classList.add('text-sm')
+            displayValue.classList.remove('text-4xl')
+        }
+
     })
     
     

@@ -27,7 +27,7 @@
             ">
 
         <!-- contains all of the calculator content & buttons -->
-        <div class="border border-black rounded-lg grid bg-gray-400 grid-cols-4 grid-rows-7 w-full
+        <div class="border flex-1 border-black rounded-lg z-40 grid bg-gray-400 grid-cols-4 grid-rows-7 w-full
             xs:p-3 xs:space-y-3 xs:h-fit xs:self-center
             xsm:h-3/4 xsm:text-lg
             xxsm:text-2xl
@@ -36,11 +36,11 @@
 
 
             <!-- Calculator's screen -->
-            <section class="border flex flex-col p-5 border-black rounded-lg bg-slate-50 
+            <section class="border flex flex-col overflow-hidden h-fit p-5 border-black rounded-lg bg-slate-50 
                 xs:col-span-4 xs:row-start-1 xs:row-span-2">
 
                 <p class="place-self-end text-2xl">+9</p>
-                <h1 id="display-value" class="text-4xl border border-black text-black self-end mb-5 ">s</h1>
+                <h1 id="display-value" class="text-4xl border border-black text-black self-end"></h1>
 
             </section>
 

@@ -6,25 +6,25 @@ let mathmaticalOperator
 
 // Add function
 let add = function(num1, num2) {
-    return num1 + num2
+    return parseInt(num1) + parseInt(num2)
 }
 
 
 // Subtract function
 let substract = function (num1, num2) {
-    return num1 - num2
+    return parseInt(num1) - parseInt(num2)
 }
 
 
 // Multiply function
 let multiply = function(num1, num2) {
-    return num1 * num2
+    return parseInt(num1) * parseInt(num2)
 }
 
 
 // Divide function
 let divide = function(num1, num2) {
-    return num1 / num2
+    return parseInt(num1) / parseInt(num2)
 }
 
 
@@ -59,10 +59,10 @@ let operationButtons = document.querySelectorAll('#operation-button')
 operationButtons.forEach((opButton) => {
     opButton.addEventListener('click', () => {
         mathmaticalOperator = opButton.innerText
-        num1 = displayValue.innerText
+        numberOne = displayValue.innerText
         miniDisplay.innerText = `${displayValue.innerText}${opButton.innerText}`
         displayValue.innerText = ''
-        console.log(num1)
+        
     })
 })
 
@@ -116,11 +116,12 @@ equalButton.addEventListener('click', () => {
 
     numberTwo = displayValue.innerText
     miniDisplay.innerText = ''
-    console.log('Until this line, Its all good');
-
+    console.log(numberOne);
+    
     switch (mathmaticalOperator) {
         case '+':
-            displayValue.textContent = operate(numberOne, numberTwo, add)
+            displayValue.innerText = ''
+            displayValue.innerText = operate(numberOne, numberTwo, add)
             break;
     
 

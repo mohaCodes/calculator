@@ -36,11 +36,11 @@
 
 
             <!-- Calculator's screen -->
-            <section class="border flex flex-col overflow-hidden h-fit p-5 border-black rounded-lg bg-slate-50 
+            <section class="border flex flex-col overflow-hidden h-full p-5 border-black rounded-lg bg-slate-50 
                 xs:col-span-4 xs:row-start-1 xs:row-span-2">
 
-                <p class="place-self-end text-2xl">+9</p>
-                <h1 id="display-value" class="text-4xl border border-black text-black self-end"></h1>
+                <p id="mini-display" class="place-self-end block text-2xl"> </p>
+                <h1 id="display-value" class="text-4xl text-black self-end"></h1>
 
             </section>
 
@@ -62,6 +62,7 @@
             </section>
 
 
+
             <div class="col-span-4 row-span-4 grid grid-rows-4 grid-cols-4 space-y-1">
                 <!-- Conatins first row of buttons -->
                 <div class="space-x-0.5 col-span-4 grid place-content-stretch grid-cols-4">
@@ -75,7 +76,7 @@
                     <button type="button" id="number-button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">9</button>
 
-                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
+                    <button id="operation-button" type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         /
                     </button>
@@ -95,7 +96,7 @@
                     <button type="button" id="number-button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">6</button>
 
-                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
+                    <button id="operation-button" type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         *
                     </button>
@@ -115,7 +116,7 @@
                     <button type="button" id="number-button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">3</button>
 
-                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
+                    <button id="operation-button" type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         -
                     </button>
@@ -131,14 +132,12 @@
                         .
                     </button>
                     <button type="button" id="number-button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
-                        xs:font-bold">
-                        0
-                    </button>
-                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
+                        xs:font-bold">0</button>
+                    <button id="operate-button" type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         =
                     </button>
-                    <button type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
+                    <button id="operation-button" type="button" class="bg-slate-50 hover:bg-gray-200 duration-75 rounded-lg border border-black
                         xs:font-bold">
                         +
                     </button>

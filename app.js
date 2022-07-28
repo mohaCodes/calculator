@@ -1,34 +1,73 @@
+// Some global values
+let numberOne
+let numberTwo
+let mathmaticalOperator
+
+
 // Add function
-function add(num1, num2) {
+let add = function(num1, num2) {
     return num1 + num2
 }
 
 
 // Subtract function
-function subtract(num1, num2) {
+let substract = function (num1, num2) {
     return num1 - num2
 }
 
 
 // Multiply function
-function multiply(num1, num2) {
+let multiply = function(num1, num2) {
     return num1 * num2
 }
 
 
 // Divide function
-function divide(num1, num2) {
+let divide = function(num1, num2) {
     return num1 / num2
 }
 
 
 // Function will be called when '=' is called
-function operate(num1, num2, callback) {
+let operate = function(num1, num2, callback) {
     return `${callback(num1, num2)}`
 }
 
+
+
 // main display in screen
 let displayValue = document.getElementById('display-value')
+
+
+// get mini-display text
+let miniDisplay = document.getElementById('mini-display')
+
+
+// get '=' button
+let equalButton = document.getElementById('operate-button')
+
+
+// get all operation-button as a node-list
+let operationButtons = document.querySelectorAll('#operation-button')
+
+
+
+/** 
+ * Will set mini-display to display-value's value...
+ * with whatever operation button that has been clicked
+ */
+operationButtons.forEach((opButton) => {
+    opButton.addEventListener('click', () => {
+        mathmaticalOperator = opButton.innerText
+        num1 = displayValue.innerText
+        miniDisplay.innerText = `${displayValue.innerText}${opButton.innerText}`
+        displayValue.innerText = ''
+        console.log(num1)
+    })
+})
+
+
+
 
 
 /**
@@ -36,9 +75,12 @@ let displayValue = document.getElementById('display-value')
  *  */ 
 const clearButton = document.getElementById('clear-button')
 clearButton.addEventListener('click', () => {
-    displayValue.textContent = ''
+    displayValue.innerText = ''
+    miniDisplay.innerText = ''
     displayValue.classList.add('text-4xl')
 })
+
+
 
 
 
@@ -64,4 +106,44 @@ numberButtons.forEach((numberButton) => {
 })
 
 
-console.log(operate(1, 2, add));
+
+
+/**
+ * Eventlistener for '=' button, It'll set 'numberTwo'...
+ * to 'displayValue's ' value and will call
+ */
+equalButton.addEventListener('click', () => {
+
+    numberTwo = displayValue.innerText
+    miniDisplay.innerText = ''
+    console.log('Until this line, Its all good');
+
+    switch (mathmaticalOperator) {
+        case '+':
+            displayValue.textContent = operate(numberOne, numberTwo, add)
+            break;
+    
+
+        case '-':
+            displayValue.innerText = operate(numberOne, numberTwo, substract)
+            break;
+
+
+        case '*':
+            displayValue.innerText = operate(numberOne, numberTwo, multiply)
+            break;
+
+
+        case '/':
+            displayValue.innerText = operate(numberOne, numberTwo, divide)
+            break;
+        
+    }
+
+
+
+
+
+})
+
+

@@ -6,25 +6,25 @@ let mathmaticalOperator
 
 // Add function
 let add = function(num1, num2) {
-    return parseInt(num1) + parseInt(num2)
+    return num1 + num2
 }
 
 
 // Subtract function
 let substract = function (num1, num2) {
-    return parseInt(num1) - parseInt(num2)
+    return num1 - num2
 }
 
 
 // Multiply function
 let multiply = function(num1, num2) {
-    return parseInt(num1) * parseInt(num2)
+    return num1 * num2
 }
 
 
 // Divide function
 let divide = function(num1, num2) {
-    return parseInt(num1) / parseInt(num2)
+    return num1 / num2
 }
 
 
@@ -121,30 +121,46 @@ equalButton.addEventListener('click', () => {
     switch (mathmaticalOperator) {
         case '+':
             displayValue.innerText = ''
-            displayValue.innerText = operate(numberOne, numberTwo, add)
+            displayValue.innerText = operate(Number(numberOne), Number(numberTwo), add)
+            numberOne = ''
+            numberTwo = ''
+            mathmaticalOperator = ''
             break;
     
 
         case '-':
-            displayValue.innerText = operate(numberOne, numberTwo, substract)
+            displayValue.innerText = ''
+            displayValue.innerText = operate(Number(numberOne), Number(numberTwo), substract)
+            numberOne = ''
+            numberTwo = ''
+            mathmaticalOperator = ''
             break;
 
 
         case '*':
-            displayValue.innerText = operate(numberOne, numberTwo, multiply)
+            displayValue.innerText = ''
+            displayValue.innerText = operate(Number(numberOne), Number(numberTwo), multiply)
+            numberOne = ''
+            numberTwo = ''
+            mathmaticalOperator = ''
             break;
 
 
         case '/':
-            displayValue.innerText = operate(numberOne, numberTwo, divide)
+            displayValue.innerText = ''
+            displayValue.innerText = operate(Number(numberOne), Number(numberTwo), divide)
+            numberOne = ''
+            numberTwo = ''
+            mathmaticalOperator = ''
             break;
         
     }
 
-
-
-
-
 })
 
+/** 
+ * attaching an eventlistener to 'delete' button.
+ * It'll get the displayValue and then split it, delete last element...
+ * and then rejoin them.
+ */
 

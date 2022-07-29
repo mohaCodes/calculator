@@ -2,6 +2,7 @@
 let numberOne
 let numberTwo
 let mathmaticalOperator
+let displayText
 
 
 // Add function
@@ -49,6 +50,10 @@ let equalButton = document.getElementById('operate-button')
 
 // get all operation-button as a node-list
 let operationButtons = document.querySelectorAll('#operation-button')
+
+
+// 'delete' button
+let deleteButton = document.querySelector('#delete-button')
 
 
 
@@ -147,20 +152,37 @@ equalButton.addEventListener('click', () => {
 
 
         case '/':
-            displayValue.innerText = ''
-            displayValue.innerText = operate(Number(numberOne), Number(numberTwo), divide)
-            numberOne = ''
-            numberTwo = ''
-            mathmaticalOperator = ''
+            if (numberOne == 0 || numberTwo == 0) {
+                alert('Invalid operation')
+            } else {
+                displayValue.innerText = ''
+                displayValue.innerText = operate(Number(numberOne), Number(numberTwo), divide)
+                numberOne = ''
+                numberTwo = ''
+                mathmaticalOperator = ''
+
+            }
             break;
         
     }
 
 })
 
+
+
 /** 
  * attaching an eventlistener to 'delete' button.
  * It'll get the displayValue and then split it, delete last element...
  * and then rejoin them.
  */
+deleteButton.addEventListener('click', () => {
 
+    displayText = displayValue.innerText
+    displayText = displayText.split('')
+    displayText.pop()
+    displayText = displayText.join('')
+    displayValue.innerText = displayText
+    console.log(displayValue.innerText);
+
+
+})

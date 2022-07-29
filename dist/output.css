@@ -601,12 +601,6 @@ video {
   height: 100%;
 }
 
-.h-fit {
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-}
-
 .max-h-screen {
   max-height: 100vh;
 }
@@ -813,10 +807,6 @@ video {
 
   .xs\:row-span-2 {
     grid-row: span 2 / span 2;
-  }
-
-  .xs\:row-span-3 {
-    grid-row: span 3 / span 3;
   }
 
   .xs\:row-start-1 {
